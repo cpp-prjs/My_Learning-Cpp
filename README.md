@@ -8,3 +8,4 @@ Learn C++ programming from past experienced programmers Java
 * Learn C++ from MSDN - https://msdn.microsoft.com/en-us/library/w5c4hyx3.aspx
 * Google C++ guide - https://google.github.io/styleguide/cppguide.html
 * Modern C++ guide - https://github.com/Microsoft/AirSim/blob/master/docs/coding_guidelines.md
+* Cpp Core Guidelines - https://github.com/isocpp/CppCoreGuidelines
