@@ -1,3 +1,9 @@
+* In linux (Ubuntu), g++ is used to compile the C/C++ files.
+  E.g. 
+  ```
+    g++ hello.cpp -o hello.out  // compile the C++ file.
+    ./hello.out   // execute the output file.
+  ```
 * **Demerit of ```cin```**:
   takes 
   i. input as string only.
