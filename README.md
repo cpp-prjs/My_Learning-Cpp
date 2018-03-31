@@ -16,3 +16,7 @@ Learn C++ programming from past experienced programmers Java
 ## Repositories
 * C++ Practice - https://github.com/dissonmatveev/exercises
 * C++ - https://github.com/Sagar-022/c_plus_plus
+* C++ programs by geeksforgeeks - https://www.geeksforgeeks.org/cc-programs/
+
+## IEEE
+* A Project-Based Curriculum for Teaching C++ Object-Oriented Programming
