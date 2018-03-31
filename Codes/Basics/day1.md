@@ -215,11 +215,22 @@ int main()
 ### 8. ASCII
 
 **Question**:
-
+Program to Print ASCII value
 
 **Solution**: 
 ```
+/*C++ Program to Print ASCII value*/
+#include <iostream>
 
+int main()
+{
+    char c;
+    std::cout<<"Enter a char: \n";
+    std::cin>>c;
+
+    std::cout<<"The ASCII value of "<<c<< " is "<< int(c)<<std::endl;
+    return 0;
+}
 ```
 
 *****
@@ -227,11 +238,37 @@ int main()
 ### 9. Switch statement
 
 **Question**:
-
+Program to understand Switch statement
 
 **Solution**: 
 ```
+/*C++ Program to understand Switch*/
+#include <iostream>
 
+int main()
+{
+    int choice;
+
+    std::cout<<"Enter an integer number (1-5): \n";
+    std::cin>>choice;
+
+    switch(choice){
+        case(1): std::cout<<"You entered 1"<<std::endl;
+                break;
+        case(2): std::cout<<"You entered 2"<<std::endl;
+                break;
+        case(3): std::cout<<"You entered 3"<<std::endl;
+                break;
+        case(4): std::cout<<"You entered 4"<<std::endl;
+                break;
+        case(5): std::cout<<"You entered 5"<<std::endl;
+                break;
+        default:
+                std::cout<<"Invalid choice."<<std::endl;
+                break;
+    }
+    return 0;
+}
 ```
 
 *****
@@ -239,11 +276,26 @@ int main()
 ### 10. If-else Statement
 
 **Question**:
-
+Program to understand If-else
 
 **Solution**: 
 ```
+/*C++ Program to understand If-else*/
+#include <iostream>
 
+int main()
+{
+    int n; 
+    std::cout<<"Enter an integer: \n";
+    std::cin>>n;
+
+    if(n % 2 == 0){
+        std::cout<<"The number is EVEN."<<std::endl;
+    } else {
+        std::cout<<"The number is ODD."<<std::endl;
+    }
+    return 0;
+}
 ```
 
 *****
