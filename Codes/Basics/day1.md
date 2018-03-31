@@ -17,7 +17,7 @@ int main()
 ```
 *****
 
-### 2. Print the number entered
+### 2. Print Numbers
 
 **Question**:
 Enter any integer and print that number
@@ -72,7 +72,147 @@ int main()
 
 *****
 
-### 4. 
+### 4. Area of Circle
+
+**Question**:
+Program to calculate Area of Circle.
+
+**Solution**: 
+```
+/*C++ Program on Area of Circle*/
+#include <iostream>
+
+int main()
+{
+    int r; // radius of the circle
+    double area;
+
+    std::cout<<"Enter the radius :\n";
+    std::cin>> r;
+
+    // the area
+    area = 3.14 * r * r;
+    std::cout<<"The area of the circle: "<< area<<std::endl;
+    return 0;
+}
+```
+
+*****
+
+### 5. Divisor & Dividend
+
+**Question**:
+Program to find Divisor and Dividend
+
+**Solution**: 
+```
+/*C++ Program to find Divisor and Dividend*/
+#include <iostream>
+
+int main()
+{
+    int dividend, divisor, quotient, remainder;
+
+    // dividend
+    std::cout<<"Enter the dividend: \n";
+    std::cin>>dividend;
+
+    // divisor
+    std::cout<<"Enter the divisor: \n";
+    std::cin>>divisor;
+
+    quotient = dividend/divisor; //quotient
+    remainder = dividend % divisor; //remainder
+
+    std::cout<<"The quotient is "<<quotient<<std::endl;
+    std::cout<<"The remainder is "<<remainder<<std::endl;
+    return 0;
+}
+```
+
+*****
+
+### 6. Convert *C to *F
+
+**Question**:
+Program to convert Celsius and Fahrenheit
+
+**Solution**: 
+```
+/*C++ Program to convert Celsius and Fahrenheit*/
+#include <iostream>
+
+int main()
+{
+    float celsius, fahrenheit;
+
+    std::cout<<"Enter temperature in Celsius: \n";
+    std::cin>>celsius;
+
+    fahrenheit = celsius * (9.0/5.0) + 32;
+    std::cout<<"The temperature in Celsius is "<< celsius<<std::endl;
+    std::cout<<"The temperature in Fahrenheit is "<< fahrenheit<<std::endl;
+
+    return 0;
+}
+```
+
+*****
+
+### 7. Leap Year
+
+**Question**:
+Program to check a leap year
+
+**HINT:** 
+[(Source)](https://support.microsoft.com/en-us/help/214019/method-to-determine-whether-a-year-is-a-leap-year)
+ To determine whether a year is a leap year, follow these steps:
+1. If the year is evenly divisible by 4, go to step 2. ...
+2. If the year is evenly divisible by 100, go to step 3. ...
+3. If the year is evenly divisible by 400, go to step 4. ...
+4. The year is a leap year (it has 366 days).
+5. The year is not a leap year (it has 365 days).
+
+**Solution**: 
+```
+/*C++ Program to check a leap year*/
+#include <iostream>
+
+int main()
+{
+    int year; 
+    std::cout<<"Enter a year: \n";
+    std::cin>>year;
+
+    if (year % 4 == 0)
+    {
+        if (year % 100 == 0)
+        {
+            if (year % 400 == 0) {
+                std::cout<<"It is a leap year"<<std::endl;
+            } 
+            else {
+                std::cout<<"It is NOT a leap year"<<std::endl;
+            }
+        } 
+        else 
+        {
+                std::cout<<"It is NOT a leap year"<<std::endl;
+
+        } 
+    } 
+    else 
+    {
+                std::cout<<"It is NOT a leap year"<<std::endl;
+
+    }
+    return 0;
+}
+```
+
+*****
+
+### 8. ASCII
 
 **Question**:
 
@@ -84,7 +224,7 @@ int main()
 
 *****
 
-### 5. 
+### 9. Switch statement
 
 **Question**:
 
@@ -96,55 +236,7 @@ int main()
 
 *****
 
-### 6. 
-
-**Question**:
-
-
-**Solution**: 
-```
-
-```
-
-*****
-
-### 7. 
-
-**Question**:
-
-
-**Solution**: 
-```
-
-```
-
-*****
-
-### 8. 
-
-**Question**:
-
-
-**Solution**: 
-```
-
-```
-
-*****
-
-### 9. 
-
-**Question**:
-
-
-**Solution**: 
-```
-
-```
-
-*****
-
-### 10. 
+### 10. If-else Statement
 
 **Question**:
 
