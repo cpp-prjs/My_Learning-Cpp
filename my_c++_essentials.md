@@ -10,12 +10,57 @@
   i. input as string only.
   ii. contnuous string as input, use alternative - ```getline```.
 * **Pointer** - here, any pointer has stored values as address
-  E.g. 
+  E.g. 1
   ```
   int a = 5;  // variable stores the value
   int *ptr = nullptr;  // declared and initialised the pointer
   ptr = &a;   // the pointer stores the memory address of the variable.
   ```  
+  E.g. 2
+  ```
+  /*For this program print for each variable
+  **print the value of the variable, 
+  **then print the address where it is stored. 
+  */
+  #include<iostream>
+  #include<string>
+
+  int main()
+  {
+      int givenInt = 5;
+      float givenFloat = 5.0;
+      double givenDouble = 5.6;
+      std::string givenString = "abhijit";
+      char givenChar = 'a';
+
+      int *pointertogivenInt;
+      pointertogivenInt = &givenInt;
+      float *pointertogivenFloat;
+      pointertogivenFloat = &givenFloat;
+      double *pointertogivenDouble ;
+      pointertogivenDouble = &givenDouble;
+      std::string *pointertogivenString;
+      pointertogivenString = &givenString;
+      char *pointertogivenChar;
+      pointertogivenChar = &givenChar;
+
+      std::cout<<"The pointertogivenInt is "<<pointertogivenInt<<std::endl;
+      std::cout<<"The value stored in pointertogivenInt is "<<*pointertogivenInt<<std::endl;
+
+      std::cout<<"The pointertogivenFloat is "<<pointertogivenFloat<<std::endl;
+      std::cout<<"The value stored in pointertogivenFloat is "<<*pointertogivenFloat<<std::endl;
+
+      std::cout<<"The pointertogivenDouble is "<<pointertogivenDouble<<std::endl;
+      std::cout<<"The value stored in pointertogivenDouble is "<<*pointertogivenDouble<<std::endl;
+
+      std::cout<<"The pointertogivenString is "<<pointertogivenString<<std::endl;
+      std::cout<<"The value stored in pointertogivenString is "<<*pointertogivenString<<std::endl;
+
+      std::cout<<"The pointertogivenChar is "<<pointertogivenChar<<std::endl;
+      std::cout<<"The value stored in pointertogivenChar is "<<*pointertogivenChar<<std::endl;
+      return 0;
+  }
+  ```
 * **Pre-increment & Post-increment** - 
   Pre- operation & then assign the updated value (to the other var)
   Post - assign the original value (to the other var) & then update this var. 
