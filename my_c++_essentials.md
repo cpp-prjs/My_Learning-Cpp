@@ -84,6 +84,10 @@
       return 0;
   }
   ```
+* array - size or length of an array
+  ```
+  sizeof(userInput)/sizeof(*userInput)  // 160/4 = 40 (defined like - e.g. arr[40])
+  ```
   
   
   
