@@ -3,6 +3,12 @@
   E.g. 
   ```
     g++ hello.cpp -o hello.out  // compile the C++ file.
+  ```
+    or
+  ```
+    g++ -std=c++11 hello.cpp -o hello.out
+  ```
+  ```
     ./hello.out   // execute the output file.
   ```
 * **Demerit of ```cin```**:
