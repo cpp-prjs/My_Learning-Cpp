@@ -14,6 +14,7 @@ Learn C++ programming from past experienced programmers Java
 * Cpp Core Guidelines - https://github.com/isocpp/CppCoreGuidelines
 
 ## Repositories
+* C++ Practice - http://www.learncpp.com/ (All C++11 programs) **Imp. for EOS blockchain**
 * C++ Practice - https://github.com/dissonmatveev/exercises
 * C++ - https://github.com/Sagar-022/c_plus_plus
 * C++ programs by geeksforgeeks - https://www.geeksforgeeks.org/cc-programs/
