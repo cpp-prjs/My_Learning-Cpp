@@ -6,7 +6,7 @@
   ```
     or
   ```
-    g++ -std=c++11 hello.cpp -o hello.out
+    g++ -std=c++11 hello.cpp -o hello.out   // compile the C++11 file.
   ```
   ```
     ./hello.out   // execute the output file.
