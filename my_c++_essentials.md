@@ -118,20 +118,64 @@
   ```
   #include<iostream>
 
-void increment(int &input); //Note the addition of '&'
+  void increment(int &input); //Note the addition of '&'
 
-int main()
-{
-    int a = 34;
-    std::cout<<"Before the function call a = "<<a<<"\n";
-    increment(a);
-    std::cout<<"After the function call a = "<<a<<"\n";
-    return 0;
-}
-void increment(int &input)//Note the addition of '&'
-{
-    input++; //**Note the LACK OF THE addition of '&'**
-    std::cout<<"In the function call a = "<<input<<"\n";
-}
+  int main()
+  {
+      int a = 34;
+      std::cout<<"Before the function call a = "<<a<<"\n";
+      increment(a);
+      std::cout<<"After the function call a = "<<a<<"\n";
+      return 0;
+  }
+  void increment(int &input)//Note the addition of '&'
+  {
+      input++; //**Note the LACK OF THE addition of '&'**
+      std::cout<<"In the function call a = "<<input<<"\n";
+  }
   ```
-  
+* OOP (polymorphism, inheritance)
+  E.g.
+  ```
+  #include <iostream>
+  // #include <sstream>
+
+
+  class Car {   // a class has "data & variables" i.e. "attributes & behavior"
+  public:
+      int weight;
+      std::string color;
+
+      void brake(){   // function to display when called.
+          std::cout<<"Brake is applied."<<std::endl;
+      }
+
+      int newWeight(){
+          weight = 10;
+          return weight;
+      }
+
+      int newWeight(int wei){  // explains Polymorphism
+          weight = wei;
+          return weight;
+      }
+  };
+
+  class Car3: public Car{   // Explains Inheritance
+
+      // No code written. Just calls the "attributes & behavior" of Parent class.
+  };
+
+
+  // Main function
+  int main()
+  {
+      Car3 car1;  // declaration with child class NOT parent class
+
+      car1.brake();
+      std::cout<<car1.newWeight()<<std::endl;
+      std::cout<<car1.newWeight(40)<<std::endl;
+
+      return 0;
+  }
+  ```
