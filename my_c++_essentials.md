@@ -67,6 +67,9 @@
       return 0;
   }
   ```
+  
+  Another example of pointer with  ```this```. Click [here](https://beginnersbook.com/2017/08/cpp-this-pointer/).
+ 
 * **Pre-increment & Post-increment** - 
   Pre- operation & then assign the updated value (to the other var)
   Post - assign the original value (to the other var) & then update this var. 
