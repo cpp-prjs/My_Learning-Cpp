@@ -1,5 +1,7 @@
-* **Writing Codes** - My personal choice - **Sublime Text 3**.
-* In linux (Ubuntu), g++ is used to compile the C/C++ files.
+* #### Editor - 
+  **Sublime Text 3**.
+* #### Installation
+  In linux (Ubuntu), g++ is used to compile the C/C++ files.
   E.g. 
   ```
     g++ hello.cpp -o hello.out  // compile the C++ file.
@@ -11,11 +13,12 @@
   ```
     ./hello.out   // execute the output file.
   ```
-* **Demerit of ```cin```**:
+* #### Demerit of ```cin```:
   takes 
   i. input as string only.
   ii. contnuous string as input, use alternative - ```getline```.
-* **Pointer** - here, any pointer has stored values as address
+* #### Pointer - 
+  here, any pointer has stored values as address
   E.g. 1
   ```
   int a = 5;  // variable stores the value
@@ -70,7 +73,7 @@
   
   Another example of pointer with  ```this```. Click [here](https://beginnersbook.com/2017/08/cpp-this-pointer/).
  
-* **Pre-increment & Post-increment** - 
+* #### Pre-increment & Post-increment - 
   Pre- operation & then assign the updated value (to the other var)
   Post - assign the original value (to the other var) & then update this var. 
   E.g. 
@@ -93,11 +96,11 @@
       return 0;
   }
   ```
-* **array - size or length of an array**
+* #### array - size or length of an array
   ```
   sizeof(userInput)/sizeof(*userInput)  // 160/4 = 40 (defined like - e.g. arr[40])
   ```
-* **Function by call or by reference**
+* #### Function by call or by reference
   ```
   #include<iostream>
 
@@ -137,7 +140,7 @@
       std::cout<<"In the function call a = "<<input<<"\n";
   }
   ```
-* OOP (polymorphism, inheritance)
+* #### OOP (polymorphism, inheritance)
   E.g.
   ```
   #include <iostream>
