@@ -12,6 +12,9 @@ Learn C++ programming from past experienced programmers Java
 * Google C++ guide - https://google.github.io/styleguide/cppguide.html
 * Modern C++ guide - https://github.com/Microsoft/AirSim/blob/master/docs/coding_guidelines.md
 * Cpp Core Guidelines - https://github.com/isocpp/CppCoreGuidelines
+* learning & practising C++ from websites - 
+  * https://www.studytonight.com/cpp/
+  * http://www.learncpp.com/
 
 ## Repositories
 * C++ Practice - http://www.learncpp.com/ (All C++11 programs) **Imp. for EOS blockchain**
