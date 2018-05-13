@@ -185,3 +185,6 @@
       return 0;
   }
   ```
+ * #### Template
+
+       > If you were to look up the word “template” in the dictionary, you’d find a definition that was similar to the following: “a template is a model that serves as a pattern for creating similar objects”. One type of template that is very easy to understand is that of a stencil. A stencil is an object (e.g. a piece of cardboard) with a shape cut out of it (eg. the letter J). By placing the stencil on top of another object, then spraying paint through the hole, you can very quickly produce stenciled patterns in many different colors! Note that you only need to create a given stencil once -- you can then use it as many times as you like, to create stenciled patterns in whatever color(s) you like. Even better, you don’t have to decide the color of the stenciled pattern you want to create until you decide to actually use the stencil.
