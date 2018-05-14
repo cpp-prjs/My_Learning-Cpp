@@ -15,6 +15,8 @@ Learn C++ programming from past experienced programmers Java
 * learning & practising C++ from websites - 
   * https://www.studytonight.com/cpp/
   * http://www.learncpp.com/
+  * https://www.includehelp.com/cpp-tutorial/
+  * ftp://www.cs.uregina.ca/pub/class/cplusplus/CExample.html
 
 ## Repositories
 * C++ Practice - http://www.learncpp.com/ (All C++11 programs) **Imp. for EOS blockchain** (C++11, C++14, C++17)
