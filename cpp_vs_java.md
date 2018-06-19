@@ -32,7 +32,7 @@
   b->setHeight(6.7);
   ```
   
-  In **Java**, no pointer only refernce.
+  In **Java**, no pointer only reference.
   ```java
   Box b;
   b.setLength(3.5);
