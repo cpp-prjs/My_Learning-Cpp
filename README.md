@@ -24,6 +24,7 @@ Learn C++ programming from past experienced programmers Java
 * C++ Practice - https://github.com/dissonmatveev/exercises
 * C++ - https://github.com/Sagar-022/c_plus_plus
 * C++ programs by geeksforgeeks - https://www.geeksforgeeks.org/cc-programs/
+* cpp-primer - https://github.com/Mooophy/Cpp-Primer
 
 ## IEEE
 * A Project-Based Curriculum for Teaching C++ Object-Oriented Programming
