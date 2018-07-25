@@ -226,3 +226,19 @@
       return (x > y) ? x : y;
   }
   ```
+	
+* ### C++ Multilevel Inheritance - 
+   ```
+    class A
+		{ 
+		... .. ... 
+		};
+		class B: public A
+		{
+		... .. ...
+		};
+		class C: public B
+		{
+		... ... ...
+		};
+   ```
