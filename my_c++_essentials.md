@@ -229,16 +229,16 @@
 	
 * ### C++ Multilevel Inheritance - 
    ```
-    class A
-		{ 
-		... .. ... 
-		};
-		class B: public A
-		{
-		... .. ...
-		};
-		class C: public B
-		{
-		... ... ...
-		};
+	class A
+	{ 
+	... .. ... 
+	};
+	class B: public A
+	{
+	... .. ...
+	};
+	class C: public B
+	{
+	... ... ...
+	};
    ```
