@@ -242,3 +242,42 @@
 	... ... ...
 	};
    ```
+
+* ### Function by value vs by reference
+```
+#include <iostream>
+
+// Function by reference
+void swap1(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+    std::cout << "changed values a = " << a << " b = " << b <<"\n";
+}
+
+// Function by value
+void swap2(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+    std::cout << "changed values a = " << *a << " b = " << *b <<"\n";
+
+}
+
+int p = 2;
+int q = 3;
+
+int main() {
+	swap1(p, q);
+	int *x = &p;
+	int *y = &q;
+	swap2(x, y);
+	return 0;
+}
+
+```
+
+> Say I want to share a web page with you. If I tell you the URL, I'm passing by reference. You can use that URL to see the same web page I can see. If that page is changed, we both see the changes. If you delete the URL, all you're doing is destroying your reference to that page - you're not deleting the actual page itself.
+
+> If I print out the page and give you the printout, I'm passing by value. Your page is a disconnected copy of the original. You won't see any subsequent changes, and any changes that you make (e.g. scribbling on your printout) will not show up on the original page. If you destroy the printout, you have actually destroyed your copy of the object - but the original web page remains intact.
+[Read more](https://stackoverflow.com/questions/373419/whats-the-difference-between-passing-by-reference-vs-passing-by-value#)
