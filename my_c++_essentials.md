@@ -243,7 +243,7 @@
 	};
    ```
 
-* ### Function by value vs by reference
+* ### Function by reference vs by value (/pointer) 
 ```
 #include <iostream>
 
@@ -268,10 +268,10 @@ int p = 2;
 int q = 3;
 
 int main() {
-	swap1(p, q);
+	swap1(p, q); // pass by reference
 	int *x = &p;
 	int *y = &q;
-	swap2(x, y);
+	swap2(x, y); // pass by value
 	return 0;
 }
 
@@ -281,3 +281,5 @@ int main() {
 
 > If I print out the page and give you the printout, I'm passing by value. Your page is a disconnected copy of the original. You won't see any subsequent changes, and any changes that you make (e.g. scribbling on your printout) will not show up on the original page. If you destroy the printout, you have actually destroyed your copy of the object - but the original web page remains intact.
 [Read more](https://stackoverflow.com/questions/373419/whats-the-difference-between-passing-by-reference-vs-passing-by-value#)
+
+[SOURCE](https://www.geeksforgeeks.org/passing-by-pointer-vs-passing-by-reference-in-c/)
