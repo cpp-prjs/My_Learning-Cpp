@@ -4,6 +4,9 @@ Learn C++ programming from past experienced programmers Java
 ## Tools
 * Online IDE - https://www.onlinegdb.com/online_c++_compiler
 
+## Installation
+
+
 ## Learning
 * Udacity Course: C++ for Programmers - https://classroom.udacity.com/courses/ud210/
 * Java from C++ -  https://www.seas.upenn.edu/~cis1xx/resources/JavaForCppProgrammers/j-javac-cpp-ltr.pdf
@@ -17,6 +20,7 @@ Learn C++ programming from past experienced programmers Java
   * http://www.learncpp.com/
   * https://www.includehelp.com/cpp-tutorial/
   * ftp://www.cs.uregina.ca/pub/class/cplusplus/CExample.html
+* cpp nuts (concept, mcq, interview Q.) - [YouTube](https://www.youtube.com/user/MrRupeshyadav), [Website](http://cppnuts.com)
 
 ## Repositories
 * C++ Practice - http://www.learncpp.com/ (All C++11 programs) **Imp. for EOS blockchain** (C++11, C++14, C++17)
