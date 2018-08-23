@@ -283,3 +283,23 @@ int main() {
 [Read more](https://stackoverflow.com/questions/373419/whats-the-difference-between-passing-by-reference-vs-passing-by-value#)
 
 [SOURCE](https://www.geeksforgeeks.org/passing-by-pointer-vs-passing-by-reference-in-c/)
+
+* ### `auto` keyword - called as "Type Inferring"
+	it automatically takes the 'type' of the function, variable.
+	
+	
+	```cpp
+	/// This will work
+	auto add(int x, int y)
+	{
+			return x + y;
+	}
+	
+	/// This will NOT work. So, instead use templates.
+	void addAndPrint(auto x, auto y)
+	{
+			std::cout << x + y;
+	}
+	```
+	
+	[SOURCE](http://www.learncpp.com/cpp-tutorial/4-8-the-auto-keyword/)
