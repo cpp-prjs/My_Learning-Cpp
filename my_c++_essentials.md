@@ -303,3 +303,128 @@ int main() {
 	```
 	
 	[SOURCE](http://www.learncpp.com/cpp-tutorial/4-8-the-auto-keyword/)
+
+* ### `typedef` - Type definition
+	- #### with Variables
+	```cpp
+	int current_speed ;
+	int high_score ;
+
+
+	void congratulate(int your_score) {
+			if (your_score > high_score)
+					...
+	```
+	
+	& 
+	
+	```cpp
+	typedef int km_per_hour ;
+	typedef int points ;
+
+	km_per_hour current_speed ;  //"km_per_hour" is synonymous with "int" here,
+	points high_score ;          //and thus, the compiler treats our new variables as integers.
+
+
+	void congratulate(points your_score) {
+			if (your_score > high_score)
+					...
+	```
+	
+	are both identical.
+	
+	**Inference:** Both sections of code execute identically. However, the use of typedef declarations in the second code block makes it clear that the two variables, while represented by the same data type int, represent different or incompatible data. The definition in congratulate() of your_score indicates to the programmer that current_speed (or any other variable not declared as a points) should not be passed as an argument.
+	
+	- #### with Structs
+	In terms of `struct` typedef is defined as:
+	```cpp
+	typedef struct {
+    int data1;
+    char data2;
+	} newtype;
+	```
+	
+	- #### with Pointers
+	In terms of `pointers`, typedef is defined as;
+	```cpp
+	typedef int *intptr;   // type name: intptr
+                       // new type: int*
+
+	intptr ptr;            // same as: int *ptr
+	```
+	
+	**Inference:** Above, intptr is a new alias with the pointer type int*. The definition, intptr ptr;, defines a variable ptr with the type int*. So, ptr is a pointer which can point to a memory with int type.
+	```cpp
+	typedef int *intptr;
+
+	intptr cliff, allen;        // both cliff and allen are int* type
+
+	intptr cliff2, *allen2;     // cliff2 is int* type, but allen2 is int** type
+															// same as: intptr cliff2;
+															//          intptr *allen2;
+	```
+	
+  - #### with structure pointers
+	```cpp
+	typedef struct Node Node;
+	struct Node {
+			int data;
+			Node *nextptr;
+	};
+	```
+	 
+	e.g. 2 -->
+	```cpp
+	struct Node *startptr, *endptr, *curptr, *prevptr, errptr, *refptr;
+	```
+	 &
+	 
+	 ```cpp
+	 typedef struct Node* NodePtr;
+	 NodePtr startptr, endptr, curptr, prevptr, errptr, refptr;
+	 ```
+	 are identical.
+	 
+	- #### with Function pointers
+	 TODO - https://en.wikipedia.org/wiki/Typedef#Using_typedef_with_function_pointers
+	 
+  - #### with Arrays
+	 ```cpp
+	typedef char arrType[6];    // type name: arrType
+														// new type: char[6]
+
+	arrType arr={1,2,3,4,5,6};  // same as: char arr[6]={1,2,3,4,5,6}
+
+	arrType *pArr;              // same as: char (*pArr)[6];
+	 ```
+	 
+  - #### Usage in C++
+  ```cpp
+  std::vector<std::pair<std::string, int> > values;
+  for (std::vector<std::pair<std::string, int> >::const_iterator i = values.begin(); i != values.end(); ++i)
+  {
+     std::pair<std::string, int> const & t = *i;
+     // do something
+  }
+	 ```
+   & 
+  ```cpp
+  typedef std::pair<std::string, int> value_t;
+  typedef std::vector<value_t> values_t;
+
+  values_t values;
+  for (values_t::const_iterator i = values.begin(); i != values.end(); ++i)
+  {
+     value_t const & t = *i;
+     // do something
+  }
+  ```
+  are identical.
+  
+  - #### with templates
+  TODO - https://en.wikipedia.org/wiki/Typedef#Use_with_templates
+	
+	
+	
+	
+	
