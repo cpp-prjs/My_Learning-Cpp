@@ -423,8 +423,121 @@ int main() {
   
   - #### with templates
   TODO - https://en.wikipedia.org/wiki/Typedef#Use_with_templates
+
 	
+* ### Inline functions 
+	- CPU stores the memory address of the instruction and then calls the function.
+	- copies the arguments of the function on the stack.
+	- if the **execution-time** of function < **switching-time** from the caller function to called function (callee).
+	- E.g. 
+		+ for Small function, the execution time < switching time.
+		+ for Large function, the execution time > switching time.
+	- C++ provides inline functions to reduce the function call (i.e. switching time).
+	- syntax:
+	```
+	inline return-type function-name(parameters) 
+	{
+		// Do anything
+	}
+	```
+	- #### NOTE: `inline` is not a command, but a request to the compiler.
+	-  Compiler **may** not consider in these circumstances:
+		+ If a function contains a loop. (for, while, do-while)
+		+ If a function contains static variables.
+		+ If a function is recursive.
+		+ If a function return type is other than void, and the return statement doesn’t exist in function body.
+		+ If a function contains switch or goto statement.
+	- Advantages:
+		+ Function call overhead doesn’t occur
+		+ It also saves the overhead of push/pop variables on the stack when function is called.
+		+ It also saves overhead of a return call from a function.
+		+ For embedded systems, `inline` functions (if it is small) can yield less code than the function call.
+	- Disadvantages:
+		+ inlined function consumes additional registers.
+		+ too many inline functions leads to large binary executable file size.
+		+ too much inlining can reduce your instruction cache hit rate => low speed of instruction fetch from cache memory to primary memory.
+		+ For many embedded systems, inline functions may not be useful because code size is more imp. than speed.
+	- **Bad** inline programming style
+	```
+	class S
+	{
+	public:
+		inline int square(int s) // redundant use of inline
+		{
+			// this function is automatically inline
+			// function body
+		}
+	};
+	```
+	- **Good** inline programming style
+	```cpp
+	class S
+	{
+	public:
+		int square(int s); // declare the function
+	};
+	inline int S::square(int s) // use inline prefix
+	{
+			// do something
+	}
+	```
 	
-	
-	
-	
+	Link - https://www.geeksforgeeks.org/inline-functions-cpp/
+
+* ### `const` methods
+	- `const` method function --> not allow them to modify the object on which they are called.
+	- E.g.
+	```
+		#include<iostream>
+
+		using namespace std;
+
+		class Test {
+
+		    int value;
+
+		public:
+		    Test(int v = 0) {value = v;}
+		    // We get compiler error if we add a line like "value = 100;"
+		    // in this function.
+		    int getValue() const {return value;}  
+		};
+
+		int main() {
+		    Test t(20);
+		    cout<<t.getValue();
+		    return 0;
+		}
+	```
+	- a `const` function can be called on any type of object.
+	- But, a non-const function can be called by non-const objects.
+
+	Like 
+
+		```
+		#include <iostream>
+
+		using namespace std;
+
+		class Test {
+			int value;
+
+			public:
+					Test( int v ) {value = v;}
+
+					int getValue() {return value;}
+		};
+
+		int main() {
+			const Test t(20);
+			std::cout << t.getValue() << std::endl;
+
+			return 0;
+		}
+		```
+
+	gives an error:
+		`passing 'const Test' as 'this' argument of 'int 
+		Test::getValue()' discards qualifiers`
+
+	 
