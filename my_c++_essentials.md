@@ -543,4 +543,4 @@ int main() {
 	Link - https://www.geeksforgeeks.org/const-member-functions-c/ 
 	
 * ### Access modifiers: `public` `private` `protected`
-  Refer this [Link](https://github.com/abhi3700/My_Learning_EOS/blob/master/my_eos_essentials.md#understanding-the-eosio-smart-contract)
+  Refer this [Link](https://www.geeksforgeeks.org/access-modifiers-in-c/)
