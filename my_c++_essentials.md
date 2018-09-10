@@ -544,3 +544,42 @@ int main() {
 	
 * ### Access modifiers: `public` `private` `protected`
   Refer this [Link](https://www.geeksforgeeks.org/access-modifiers-in-c/)
+  
+* ### Tuples and Pairs
+	- Tuple: multiple values
+	- Pair: 2 values
+	- Code example:
+```
+#include <iostream>
+#include <tuple>
+
+using namespace std;
+
+tuple<int, int, char> foo(int n1, int n2) {
+	return make_tuple(n2, n1, 'a');
+}
+
+pair<int, int> foo1(int n1, int n2) /*const*/ {
+	return make_pair(n2, n1);
+}
+
+int main() {
+	int a, b;
+	char cc;
+
+	tie(a, b, cc) = foo(1, 2);
+	pair<int, int> p = foo1(3, 4);
+
+	cout << "values returned by Tuple: \n";
+	cout << a << " " << b  << " " << cc << endl;
+
+	cout << "values returned by Pair: \n";
+	cout << p.first << " " << p.second;
+
+	return 0;
+}
+
+
+```
+
+
