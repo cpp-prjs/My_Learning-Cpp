@@ -41,6 +41,7 @@ Learn C++ programming from past experienced programmers Java
 * toolkit for creative coding in C++ - https://github.com/openframeworks/openFrameworks
 * Exercism exercises in C++ - https://github.com/exercism/cpp
 * Cryptography with C++ - https://github.com/weidai11/cryptopp
+* JSON for modern C++ - https://github.com/nlohmann/json
 
 ## Books
 * Design and Evolution of C++ by B. Stroustroup - https://github.com/bjut-hz/E-Books/blob/master/program%20language/The%20Design%20And%20Evolution%20Of%20Cpp.pdf
