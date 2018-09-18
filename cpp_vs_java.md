@@ -39,3 +39,55 @@
   b.setBreadth(5.6);
   b.setHeight(6.7);
   ```
+  
+* ### `static` use in functions
+  #### C++:
+  `static` (in function) saves the state. For more, click [here](https://github.com/abhi3700/My_Learning-Cpp/blob/master/my_cpp_essentials.md#static-keyword)
+  ```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  void func() {
+      static int i = 0;
+      cout << i;
+      i++;
+  }
+
+  int main() {
+      func();
+      func();
+      func();
+
+      return 0;
+  }
+  ```
+  Output:
+  ```
+  012
+  ```  
+  Here, `static` means the function saves the previous state and runs from there on next call.
+  #### Java:
+  static has no such role.
+  ```java
+  class Main {
+      static void func() {
+          /*static*/ int i = 0;
+          System.out.println(i);
+          i++;
+      }
+      public static void main(String[] args) {
+          func();
+          func();
+          func();
+      }
+  }
+  ```
+  Output:
+  ```
+  0
+  0
+  0
+  ```
+  Here, use of `static` would give error.
+  
