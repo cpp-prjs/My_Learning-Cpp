@@ -1,5 +1,5 @@
 * ### Function definition - 
-  In **C++**, ```function``` declaration should be before than its use. <br/>
+  In **C++**, ```function``` declaration should be done, before its use. Or else, define entirely before its use in the main function<br/>
   E.g.
   ```cpp
   void foo(int); // Prototype declaration of foo, seen by main
