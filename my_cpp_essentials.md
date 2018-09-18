@@ -624,3 +624,5 @@ int main() {
 	`0 1 2 3 4 `
 	
 	Here, due to `static` keyword use, the variable in the previous function call gets saved (or carried) in the next call and likewise. 
+	
+	[SOURCE](https://www.geeksforgeeks.org/static-keyword-cpp/)
