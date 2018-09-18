@@ -590,4 +590,37 @@ int main() {
 
 ```
 
+* ### `static` keyword
+	- use in functions
+	```
+	// C++ program to demonstrate  
+	// the use of static Static  
+	// variables in a Function 
+	#include <iostream> 
+	#include <string> 
+	using namespace std; 
 
+	void demo() 
+	{  
+			// static variable 
+			static int count = 0; 
+			cout << count << " "; 
+
+			// value is updated and 
+			// will be carried to next 
+			// function calls 
+			count++; 
+	} 
+
+	int main() 
+	{ 
+			for (int i=0; i<5; i++)     
+					demo(); 
+			return 0; 
+	} 
+	```
+	
+	Output:
+	`0 1 2 3 4 `
+	
+	Here, due to `static` keyword use, the variable in the previous function call gets saved (or carried) in the next call and likewise. 
