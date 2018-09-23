@@ -21,7 +21,9 @@
   ```
     ./hello.out   // execute the output file.
   ```
-  
+* ### Fundamental types
+	[SOURCE](https://msdn.microsoft.com/en-us/library/cc953fe1.aspx)
+	
 * ### Demerit of ```cin```:
   takes 
   i. input as string only.
