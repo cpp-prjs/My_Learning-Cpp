@@ -39,7 +39,7 @@ Learn C++ programming from past experienced programmers Java
 * All Algorithms implemented in C++ - https://github.com/TheAlgorithms/C-Plus-Plus
 * A toolkit for making real world machine learning and data analysis applications in C++ - https://github.com/davisking/dlib
 * toolkit for creative coding in C++ - https://github.com/openframeworks/openFrameworks
-* Exercism exercises in C++ - https://github.com/exercism/cpp
+* Exercism exercises in C++ - https://github.com/abhi3700/exercises/
 * Cryptography with C++ - https://github.com/weidai11/cryptopp
 * JSON for modern C++ - https://github.com/nlohmann/json
 
