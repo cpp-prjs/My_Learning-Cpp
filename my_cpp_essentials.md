@@ -21,14 +21,53 @@
   ```
     ./hello.out   // execute the output file.
   ```
+	
 * ### Fundamental types
 	[SOURCE](https://msdn.microsoft.com/en-us/library/cc953fe1.aspx)
 	
 * ### Demerit of ```cin```:
   takes 
-  i. input as string only.
-  ii. contnuous string as input, use alternative - ```getline```.
-  
+	- input as string only.
+  - contnuous string as input, use alternative - ```getline```.
+	
+* ### References [SOURCE](https://www.youtube.com/watch?v=R4iviB8g12A)
+	- concept introduced in C++.
+	- **Rules:** TODO 
+	- Example
+	```cpp
+	#include <iostream>
+
+	using namespace std;
+
+	// outputs variable on the console.
+	void print(int var) {
+		cout << var << endl;
+	}
+
+
+	int main() {
+		int v = 5;
+
+		// print the variable's value.
+		print(v);	// 5
+
+		int &p = v;
+
+		// print the reference variable's value.
+		print(p);	// 5	
+
+		// increment the ref. variable.
+		p++;	
+
+		// print the incremented ref. variable.
+		print(p);	// 6
+
+		// print the actual variable now.
+		print(v);	// 6
+
+		return 0;
+	}
+	```
 * ### Pointer - 
   here, any pointer has stored values as address
   E.g. 1
