@@ -42,6 +42,8 @@ Learn C++ programming from past experienced programmers Java
 * Exercism exercises in C++ - https://github.com/abhi3700/exercises/
 * Cryptography with C++ - https://github.com/weidai11/cryptopp
 * JSON for modern C++ - https://github.com/nlohmann/json
+* Cpp files practice - https://github.com/samzhuwj/snippets/tree/master/cpp
+* C++ header files package - https://github.com/samzhuwj/leet-code
 
 ## Books
 * Design and Evolution of C++ by B. Stroustroup - https://github.com/bjut-hz/E-Books/blob/master/program%20language/The%20Design%20And%20Evolution%20Of%20Cpp.pdf
