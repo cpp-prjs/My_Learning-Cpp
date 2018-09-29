@@ -1,4 +1,4 @@
-* print any type<br/>
+* print any type using `template` <br/>
 ```cpp
 using namespace std;
 
