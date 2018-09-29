@@ -27,4 +27,21 @@ int main() {
   - increment, decrement, substraction are allowed. p=p+1, p=p-1, p-q;
 
 * Prefer using functions by address, NOT by value, especially in case of arrays.
+  ```cpp
+  void printarray( int *b, int n){
+    for(int i = 0; i < n; i++) {
+      print(*(b+i));
+    }
+  }
+
+  int main()
+  {
+    int a[5] = {1, 3, 5, 6, 7};
+    int* p = a;
+
+    printarray(p, 5);
+
+    return 0;
+  }
+  ```
   [SOURCE](https://www.youtube.com/watch?v=cKmru3pcggg)
