@@ -46,3 +46,13 @@ int main() {
   }
   ```
   [SOURCE](https://www.youtube.com/watch?v=cKmru3pcggg)
+
+* `i++` vs `++i` in loops
+  ```cpp
+  ++i;  // Fetch i, increment it, and return it
+  i++;  // Fetch i, copy it, increment i, return copy
+  ```
+  
+  **Recommended**: `++i` always chosen, bcoz it avoids copying any variable. 
+  
+  For details, click [here](https://stackoverflow.com/questions/4261708/i-or-i-in-for-loops/4261743#4261743)
