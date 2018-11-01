@@ -779,4 +779,14 @@ int main() {
 	```
 	[SOURCE](https://www.geeksforgeeks.org/char-vs-stdstring-vs-char-c/)
 	
-	Hence, in C++, prefer `std::string` for string usage as it contains many other functions 
+	Hence, in C++, prefer `std::string` for string usage as it contains many other functions
+	
+	#### const
+	* const in variables
+	* const in pointers
+	* const in function arguments and return
+	* const class data members
+	* const class object
+	* const class member function
+	
+	[Source](https://www.studytonight.com/cpp/const-keyword.php)
