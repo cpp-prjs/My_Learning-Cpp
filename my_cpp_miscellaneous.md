@@ -56,3 +56,8 @@ int main() {
   **Recommended**: `++i` always chosen, bcoz it avoids copying any variable. 
   
   For details, click [here](https://stackoverflow.com/questions/4261708/i-or-i-in-for-loops/4261743#4261743)
+  
+* `const` variable vs `const` pointer
+  - `const int x = 8;   // const variable`
+  - `const int* y;   // pointer pointing to a const variable`
+  - `const int* const z;  // const pointer pointing to a const variable`
