@@ -781,12 +781,12 @@ int main() {
 	
 	Hence, in C++, prefer `std::string` for string usage as it contains many other functions
 	
-	#### const
-	* const in variables
-	* const in pointers
-	* const in function arguments and return
-	* const class data members
-	* const class object
-	* const class member function
+* ### const
+	- const in variables
+	- const in pointers
+	- const in function arguments and return
+	- const class data members
+	- const class object
+	- const class member function
 	
 	[Source](https://www.studytonight.com/cpp/const-keyword.php)
