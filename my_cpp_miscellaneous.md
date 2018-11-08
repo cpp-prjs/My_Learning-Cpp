@@ -61,3 +61,37 @@ int main() {
   - `const int x = 8;   // const variable`
   - `const int* y;   // pointer pointing to a const variable`
   - `const int* const z;  // const pointer pointing to a const variable`
+  
+* call by val, ref, pointer
+  As per [Google C++ guide](http://drake.mit.edu/styleguide/cppguide.html),
+  `In fact, it is a very strong convention in Google code that input arguments are values or const references while output arguments are pointers.`
+  
+  **Method 1:**
+  ```cpp
+  void split(const std::string &name, std::string *first, std::string *last)
+  {
+      std::size_t pos = name.find(" ");
+      *first = name.substr(0, pos);
+      *last = name.substr(pos + 1);
+  }
+  std::string name = "Dan Larimer";
+  std::string first, last;
+  split(name, &first, &last);
+  ```
+  
+  **Method 2:**
+  ```cpp
+  void split(const std::string &name, std::string& first, std::string& last)
+  {
+      std::size_t pos = name.find(" ");
+      first = name.substr(0, pos);
+      last = name.substr(pos + 1);
+  }
+  std::string name = "Dan Larimer";
+  std::string first, last;
+  split(name, first, last);
+  ```
+  
+  **Inference**: What you prefer is up to you and comes down to personal style. One reason why the Google C++ Styleguide prefers pointers as output arguments is because it makes it clear at the caller site that the argument is potentially going to be mutated.
+  
+  [Source](https://cmichel.io/cpp-guide-for-eos-development-call-by-value-reference/)
