@@ -55,6 +55,10 @@ int main() {
   
   **Recommended**: `++i` always chosen, bcoz it avoids copying any variable. 
   
+  >> **NOTE: <br/> 
+      Postfix form of ++,-- operator follows the rule use-then-change , <br/>
+      Prefix form (++x,--x) follows the rule change-then-use.**
+  
   For details, click [here](https://stackoverflow.com/questions/4261708/i-or-i-in-for-loops/4261743#4261743)
   
 * `const` variable vs `const` pointer
