@@ -1,5 +1,5 @@
  /**
- * @brief A random number generator
+ * @brief A random number generator for integer number.
  * @description it can be used for rolling dice, OTP generation purposes.
  */
 
