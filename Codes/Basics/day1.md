@@ -5,7 +5,7 @@
 Print "Hello World"
 
 **Solution**: 
-```
+```cpp
 /*C++ Program to Print "Hello World"*/
 #include <iostream>
 
@@ -23,7 +23,7 @@ int main()
 Enter any integer and print that number
 
 **Solution**: 
-```
+```cpp
 /*C++ Program to Print Number Entered by User*/
 #include <iostream>
 
@@ -49,7 +49,7 @@ int main()
 Program to add 2 Numbers.
 
 **Solution**: 
-```
+```cpp
 /*C++ Program to Add 2 Numbers*/
 #include <iostream>
 
@@ -78,7 +78,7 @@ int main()
 Program to calculate Area of Circle.
 
 **Solution**: 
-```
+```cpp
 /*C++ Program on Area of Circle*/
 #include <iostream>
 
@@ -105,7 +105,7 @@ int main()
 Program to find Divisor and Dividend
 
 **Solution**: 
-```
+```cpp
 /*C++ Program to find Divisor and Dividend*/
 #include <iostream>
 
@@ -138,7 +138,7 @@ int main()
 Program to convert Celsius and Fahrenheit
 
 **Solution**: 
-```
+```cpp
 /*C++ Program to convert Celsius and Fahrenheit*/
 #include <iostream>
 
@@ -174,7 +174,7 @@ Program to check a leap year
 5. The year is not a leap year (it has 365 days).
 
 **Solution**: 
-```
+```cpp
 /*C++ Program to check a leap year*/
 #include <iostream>
 
@@ -218,7 +218,7 @@ int main()
 Program to Print ASCII value
 
 **Solution**: 
-```
+```cpp
 /*C++ Program to Print ASCII value*/
 #include <iostream>
 
@@ -241,7 +241,7 @@ int main()
 Program to understand Switch statement
 
 **Solution**: 
-```
+```cpp
 /*C++ Program to understand Switch*/
 #include <iostream>
 
@@ -279,7 +279,7 @@ int main()
 Program to understand If-else
 
 **Solution**: 
-```
+```cpp
 /*C++ Program to understand If-else*/
 #include <iostream>
 
