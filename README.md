@@ -1,5 +1,5 @@
 # My_Learning-Cpp
-Learn C++ programming from past experienced programmers Java
+Learn C++ programming from past experienced programmers Java, Python, C.
 
 ## Tools
 * Online IDE - https://www.onlinegdb.com/online_c++_compiler
@@ -44,12 +44,20 @@ Learn C++ programming from past experienced programmers Java
 * JSON for modern C++ - https://github.com/nlohmann/json
 * Cpp files practice - https://github.com/samzhuwj/snippets/tree/master/cpp
 * C++ header files package - https://github.com/samzhuwj/leet-code
-* Boost Application Development Cookbook - [Book](http://apolukhin.github.io/Boost-Cookbook/), [Github](https://github.com/apolukhin/Boost-Cookbook) 
+* Boost Application Development Cookbook - [Book](http://apolukhin.github.io/Boost-Cookbook/), [Github](https://github.com/apolukhin/Boost-Cookbook)
+* Awesome C++ - https://github.com/fffaraz/awesome-cpp
 
 ## Books
 * Design and Evolution of C++ by B. Stroustroup - https://github.com/bjut-hz/E-Books/blob/master/program%20language/The%20Design%20And%20Evolution%20Of%20Cpp.pdf
 * C++ Primer - http://www.charleshouserjr.com/Cplus2.pdf <br/>
        Solutions - https://github.com/pezy/CppPrimer
+
+## FAQs
+* By ISOCPP - https://isocpp.org/wiki/faq
+* From C++ FAQ book - http://web.archive.org/web/20150213025148/http://www.parashift.com:80/c++-faq-lite/
+* http://yosefk.com/c++fqa/index.html
+* C Faq - http://c-faq.com/index.html
+
 
 ## IEEE
 * A Project-Based Curriculum for Teaching C++ Object-Oriented Programming
