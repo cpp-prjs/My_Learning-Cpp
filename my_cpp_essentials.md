@@ -595,45 +595,83 @@ int main() {
 	Refer this [Link](https://www.geeksforgeeks.org/access-modifiers-in-c/)
   
 * ### Tuples and Pairs
+	- Tuples are objects that pack elements of -possibly- different types together in a single object, just like pair objects do for pairs of elements, but generalized for any number of elements.
+	- `std::tuple<int, float>` is the **variable (or function) type**.
+	- `std::make_tuple(1, 3.45f)` is the `output` used as `return` also.
 	- Tuple: multiple values
 	- Pair: 2 values
 	- Code example:
-```
-#include <iostream>
-#include <tuple>
+	
+	#### E.g. 1
+	```cpp
+	#include <iostream>
+	#include <tuple>
 
-using namespace std;
+	using namespace std;
 
-tuple<int, int, char> foo(int n1, int n2) {
-	return make_tuple(n2, n1, 'a');
-}
+	tuple<int, int, char> foo(int n1, int n2) {
+		return make_tuple(n2, n1, 'a');
+	}
 
-pair<int, int> foo1(int n1, int n2) /*const*/ {
-	return make_pair(n2, n1);
-}
+	pair<int, int> foo1(int n1, int n2) /*const*/ {
+		return make_pair(n2, n1);
+	}
 
-int main() {
-	int a, b;
-	char cc;
+	int main() {
+		int a, b;
+		char cc;
 
-	tie(a, b, cc) = foo(1, 2);
-	pair<int, int> p = foo1(3, 4);
+		// Tuple
+		tie(a, b, cc) = foo(1, 2);
+		cout << "values returned by Tuple: \n";
+		cout << a << " " << b  << " " << cc << endl;
 
-	cout << "values returned by Tuple: \n";
-	cout << a << " " << b  << " " << cc << endl;
+		// Pair
+		pair<int, int> p = foo1(3, 4);
+		cout << "values returned by Pair: \n";
+		cout << p.first << " " << p.second;
 
-	cout << "values returned by Pair: \n";
-	cout << p.first << " " << p.second;
+		return 0;
+	}
+	
+	#### E.g. 2
+	```cpp
+	#include <iostream>
+	#include <tuple>	// for tuple
+	#include <string>	// for string
 
-	return 0;
-}
+	int main() {
+		int a;
+		float b;
+		char c;  
+		std::string d;
+
+		// Method - 1 
+		// tie can contain upto any qty.
+		std::tie(a, b, c, d) = std::make_tuple(1, 2.56f, 'c', "abhijit" );
+		std::cout << a << " " 
+					<< b << " " 
+					<< c << " " 
+					<< d 
+					<< std::endl;
+
+		// Method - 2 
+		std::tuple<int, float, char, std::string> t = std::make_tuple(1, 2.56f, 'c', "abhijit" );		
+		std::cout << std::get<0>(t) << " "
+					<< std::get<1>(t) << " "
+					<< std::get<2>(t) << " "
+					<< std::get<3>(t) << " "
+					<< std::endl;
+		return 0;
+	}
+	```
 
 
 ```
 
 * ### `static` keyword
 	- use in functions
-	```
+	```cpp
 	// C++ program to demonstrate  
 	// the use of static Static  
 	// variables in a Function 
