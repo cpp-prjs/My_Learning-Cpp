@@ -51,6 +51,13 @@ Learn C++ programming from past experienced programmers Java, Python, C.
 * Design and Evolution of C++ by B. Stroustroup - https://github.com/bjut-hz/E-Books/blob/master/program%20language/The%20Design%20And%20Evolution%20Of%20Cpp.pdf
 * C++ Primer - http://www.charleshouserjr.com/Cplus2.pdf <br/>
        Solutions - https://github.com/pezy/CppPrimer
+       
+## Blogs
+* Herb Sutter - https://herbsutter.com/
+* 
+
+## Talks
+
 
 ## FAQs
 * By ISOCPP - https://isocpp.org/wiki/faq
