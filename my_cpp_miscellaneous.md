@@ -142,3 +142,5 @@ Prefix form (++x,--x) follows the rule change-then-use.**
 
   </p>
   <details>
+  
+> NOTE: string is a array/pointer of characters.
