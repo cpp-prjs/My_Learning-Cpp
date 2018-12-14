@@ -116,3 +116,29 @@ Prefix form (++x,--x) follows the rule change-then-use.**
   
 * In C, the values are passed by value always.
 * **POINTERS ARE JUST ADDRESSES**
+* #### Print characters of a string
+  <details>
+    <summary><b>Code:</b></summary>
+  <p>
+
+  ```cpp
+  #include <iostream>
+  #include <string.h>
+
+  int main() {
+    char* s;
+    std::cout << "Enter a string:" << std::endl;
+    std::cin >> s;
+    if( s == NULL ) {
+      return 1;
+    } 
+    std::cout << "Output:" << std::endl;
+    for( int i = 0; i < strlen(s); ++i ) {
+      std::cout << *(s+i) << std::endl;
+    }
+    return 0;
+  }
+  ```
+
+  </p>
+  <details>
