@@ -114,3 +114,5 @@ Prefix form (++x,--x) follows the rule change-then-use.**
   - For derived types, use `reference`. 
   - And`const` with `reference` is used when the caller (e.g. class) is `const` or `non-const` and the callee is a function (should be defined `const`). Also, considered safe for use in case of derived types i.e. string, class, struct, enum, etc.
   
+* In C, the values are passed by value always.
+* **POINTERS ARE JUST ADDRESSES**
