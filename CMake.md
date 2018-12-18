@@ -6,7 +6,7 @@ This is about learning how to compile C/C++ files:
 * with independent platform support
 * with external libraries
 
-## Demo project - hello
+## Demo project: Example 1 - hello
 Follow the steps:
 * Create a folder project and name it as "hello".
 * Create 2 files: 
@@ -105,6 +105,66 @@ Hello Abhijit!
 * <kbd>ctrl + b</kbd> - build the file and show the output.
 * DONE!!
 
+## Example 2
+A more structured implementation of CMake with 
+* all the build files inside `../student/build/`
+* all the header files inside `../student/include/`
+* all the source files inside `../student/src/`
+
+Follow the steps:
+* In ST3, open a folder named "student"
+* open bash terminal here.
+* `$ mkdir build include src` - create 3 folders: build, include, src.
+* `$ touch CMakeLists.txt include/student.h src/student.cpp src/mainapp.cpp` - create the files.
+* [OPTIONAL] view the tree - `$ tree -L 2`
+<details>
+	<summary><b>Output:</b></summary>
+<p>
+
+```bash
+.
+├── CMakeLists.txt
+├── build
+├── include
+│   └── student.h
+└── src
+    ├── mainapp.cpp
+    └── student.cpp
+
+3 directories, 4 files
+```
+</p>
+</details>
+
+* edit the header files - `student.h`
+* edit the source files - `student.cpp`, `mainapp.cpp`
+* edit the `CMakeLists.txt` as:
+<details>
+	<summary><b>Output:</b></summary>
+<p>
+
+```txt
+cmake_minimum_required(VERSION 2.8.9)
+project(directory_test)
+
+#Bring the headers, such as Student.h into the project
+include_directories(include)
+
+#Can manually add the sources using the set command as follows:
+#set(SOURCES src/mainapp.cpp src/Student.cpp)
+
+#However, the file(GLOB...) allows for wildcard additions:
+file(GLOB SOURCES "src/*.cpp")
+
+add_executable(testStudent ${SOURCES})
+```
+</p>
+</details>
+
+* `cd build` - go to the build directory.
+* `cmake .` - build the project
+* `make` - create the target file `student`
+* `./student` - to get the output
 
 
 ## Why this?
