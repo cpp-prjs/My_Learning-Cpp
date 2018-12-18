@@ -27,9 +27,9 @@ Follow the steps:
     add_executable(hello hello.cpp)
     ```
 * open bash-terminal at this location. 
-* [OPTIONAL] Ensure that cmake is installed. If not Check by 
-  - `$ sudo apt-get install cmake` [For install]
-	-	`$ cmake -version` [For check]
+* (OPTIONAL) Ensure that cmake is installed. If not Check by the followings: 
+	- (to install) `$ sudo apt-get install cmake` 
+	-	(to check) `$ cmake -version` 
 	
 * type `cmake .` - to **build** the project and to generate **Makefile**. <br/>
 	CMake identified the environment settings for the linux device and created the Makefile for this project.
