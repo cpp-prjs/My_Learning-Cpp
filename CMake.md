@@ -101,6 +101,7 @@ Hello Abhijit!
 </p>
 </details>
 
+* `Tools >> Build System >> hello-cmake` - select the build system **hello-cmake** from the build systems.
 * <kbd>ctrl + b</kbd> - build the file and show the output.
 * DONE!!
 
