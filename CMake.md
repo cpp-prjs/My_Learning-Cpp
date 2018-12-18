@@ -26,6 +26,7 @@ Follow the steps:
     project (hello)
     add_executable(hello hello.cpp)
     ```
+### Method-1
 * open bash-terminal at this location. 
 * (OPTIONAL) Ensure that cmake is installed. If not Check by the followings: 
 	- (to install) `$ sudo apt-get install cmake` 
@@ -70,6 +71,40 @@ Scanning dependencies of target hello
 ```bash
 Hello Abhijit!
 ```
+### Method-2
+* `Project >> Save Project As...` - Save the project into directory - "../abhi/".
+* `Project >> Open Project` - select the `.sublime-project` to open project in a separate ST3 window.
+* Create a build system by editing the `hello.sublime-project` file as follows:
+<details>
+	<summary><b>Code</b></summary>
+<p>
+
+```json
+{
+		"folders":
+		[
+				{
+						"path": "."
+				}
+		],
+		"build_systems":
+		[
+				{
+						"name": "hello-cmake",
+						"cmd":["bash", "-c", "cmake . && make && ./hello"],
+						"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+						"selector": "source.c, source.c++, source.cpp"
+				}
+		]
+}
+```
+</p>
+</details>
+
+* <kbd>ctrl + b</kbd> - build the file and show the output.
+* DONE!!
+
+
 
 ## Why this?
 Usually, I choose to compile .cpp files with [CppFastOlympicCoding](https://packagecontrol.io/packages/CppFastOlympicCoding) package. 
