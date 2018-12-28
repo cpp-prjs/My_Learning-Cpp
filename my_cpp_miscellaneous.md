@@ -144,3 +144,4 @@ Prefix form (++x,--x) follows the rule change-then-use.**
   <details>
   
 > NOTE: string is a array/pointer of characters.
+* `malloc()`, `free()` are replaced by `new`, `delete` respectively. 
