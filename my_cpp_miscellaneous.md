@@ -145,3 +145,36 @@ Prefix form (++x,--x) follows the rule change-then-use.**
   
 > NOTE: string is a array/pointer of characters.
 * `malloc()`, `free()` are replaced by `new`, `delete` respectively. 
+* #### Declarative if statements
+  **Statement:** A customer is good only if either is true -
+  - they purchased for more than $1,000 over the past year,
+  - they never returned a purchased item,
+  - they answered a customer survey at least once.
+  
+  <ins>Define a boolean statement ?</ins>
+  ```cpp
+  bool is_a_good_customer = customer.purchased_goods() >= 1000
+                || !customer.has_returned_goods()
+                || std::find(begin(survey_respondents), end(survey_respondents), customer) != end(survey_respondents);
+  if( is_a_good_customer ) {
+    std::cout << "Dear esteemed customer" << "\n";
+  } else {
+    std::cout << "Dear customer" << "\n";	
+  }
+  ```
+  Now, suppose in addition to above conditions, a customer is good - "if a customer has defaulted (that is, they cannot pay their invoice), they’re not a good customer, regardless of all the other conditions".
+
+  So, the boolean statement becomes like this:
+  ```cpp
+  bool is_a_good_customer = customer.purchased_goods() >= 1000
+                || !customer.has_returned_goods()
+                || std::find(begin(survey_respondents), end(survey_respondents), customer) != end(survey_respondents);
+                && !customer.has_defaulted()
+  if( is_a_good_customer ) {
+    std::cout << "Dear esteemed customer" << "\n";
+  } else {
+    std::cout << "Dear customer" << "\n";	
+  }               
+  ```
+  
+  [Read more](https://www.fluentcpp.com/2019/01/18/a-simplified-rules-engine-to-make-declarative-if-statements/)
