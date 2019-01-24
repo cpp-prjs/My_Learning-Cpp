@@ -116,6 +116,8 @@ Prefix form (++x,--x) follows the rule change-then-use.**
   
 * In C, the values are passed by value always.
 * **POINTERS ARE JUST ADDRESSES**
+* `arr[i]` is interpreted as `*(arr+i)`. [Read more](https://www.geeksforgeeks.org/why-array-index-starts-from-zero/) <br/>
+  arr + i means address at i distance away from starting element of array. 
 * #### Print characters of a string
   <details>
     <summary><b>Code:</b></summary>
