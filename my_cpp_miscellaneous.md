@@ -144,7 +144,8 @@ Prefix form (++x,--x) follows the rule change-then-use.**
   
   [Refer 1](https://www.geeksforgeeks.org/core-dump-segmentation-fault-c-cpp/) [Refer 2](https://www.geeksforgeeks.org/storage-for-strings-in-c/)
   
-> NOTE: string is a array/pointer of characters.
+> NOTE: In C, a string can be referred either using a character pointer or as a character array.
+
 * `malloc()`, `free()` are replaced by `new`, `delete` respectively. 
 * #### Declarative if statements
   **Statement:** A customer is good only if either is true -
