@@ -126,15 +126,14 @@ Prefix form (++x,--x) follows the rule change-then-use.**
   #include <string.h>
 
   int main() {
-    char* s;
-    std::cout << "Enter a string:" << std::endl;
-    std::cin >> s;
-    if( s == NULL ) {
-      return 1;
-    } 
-    std::cout << "Output:" << std::endl;
-    for( int i = 0; i < strlen(s); ++i ) {
-      std::cout << *(s+i) << std::endl;
+    char* str;		// define a string using char pointer
+    int size = 20; 			/*one extra for ‘\0’*/
+    str = (char *)malloc(sizeof(char)*size);	// write a string 
+    std::cout << "Enter a String: " << "\n";	// enter any string
+    std::cin >> str;		// input a string
+    std::cout << "Output: " << "\n";
+    for( int i = 0; i < strlen(str); ++i ) {		// looping along the string 
+      std::cout << *(str+i) << "\n";			// printing each character
     }
     return 0;
   }
@@ -142,6 +141,8 @@ Prefix form (++x,--x) follows the rule change-then-use.**
 
   </p>
   <details>
+  
+  [Refer 1](https://www.geeksforgeeks.org/core-dump-segmentation-fault-c-cpp/) [Refer 2](https://www.geeksforgeeks.org/storage-for-strings-in-c/)
   
 > NOTE: string is a array/pointer of characters.
 * `malloc()`, `free()` are replaced by `new`, `delete` respectively. 
