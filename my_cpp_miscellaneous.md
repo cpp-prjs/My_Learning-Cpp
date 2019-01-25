@@ -183,5 +183,6 @@ Prefix form (++x,--x) follows the rule change-then-use.**
   
   [Read more](https://www.fluentcpp.com/2019/01/18/a-simplified-rules-engine-to-make-declarative-if-statements/)
 * #### `**deque**` is faster than `**vector**` 
+  [View Code](https://github.com/abhi3700/My_Learning-Cpp/blob/master/my_cpp_essentials.md#deque)
   [Read the Analysis](https://baptiste-wicht.com/posts/2012/12/cpp-benchmark-vector-list-deque.html)
   
