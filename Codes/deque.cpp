@@ -1,3 +1,11 @@
+/*
+	deque operations:
+	- front insert
+	- back insert
+	- front delete
+	- back delete
+*/
+
 #include <iostream>
 #include <deque>
 
