@@ -149,7 +149,7 @@
   ```
   
 * ### array - size or length of an array
-  ```
+  ```cpp
   sizeof(userInput)/sizeof(*userInput)  // 160/4 = 40 (defined like - e.g. arr[40])
   ```
   
@@ -174,7 +174,7 @@
   }
   ```
   
-  ```
+  ```cpp
   #include<iostream>
 
   void increment(int &input); //Note the addition of '&'
@@ -196,7 +196,7 @@
   
 * ### OOP (polymorphism, inheritance)
   E.g.
-  ```
+  ```cpp
   #include <iostream>
   // #include <sstream>
 
@@ -252,7 +252,7 @@
   }
   ```
   
-  ```
+  ```cpp
   // double type
   double max(double x, double y)
   {
@@ -260,7 +260,7 @@
   }
   ```
   Such functions can be represented with one function with generic type.
-  ```
+  ```cpp
   template <typename T>
   const T& max(const T& x, const T& y)
   {
@@ -285,37 +285,37 @@
   ```
 
 * ### Function by reference vs by value (/pointer) 
-```cpp
-#include <iostream>
+  ```cpp
+  #include <iostream>
 
-// Function by reference
-void swap1(int &a, int &b) {
-    int temp = a;
-    a = b;
-    b = temp;
-    std::cout << "changed values a = " << a << " b = " << b <<"\n";
-}
+  // Function by reference
+  void swap1(int &a, int &b) {
+      int temp = a;
+      a = b;
+      b = temp;
+      std::cout << "changed values a = " << a << " b = " << b <<"\n";
+  }
 
-// Function by value
-void swap2(int *a, int *b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-    std::cout << "changed values a = " << *a << " b = " << *b <<"\n";
+  // Function by value
+  void swap2(int *a, int *b) {
+      int temp = *a;
+      *a = *b;
+      *b = temp;
+      std::cout << "changed values a = " << *a << " b = " << *b <<"\n";
 
-}
+  }
 
-int p = 2;
-int q = 3;
+  int p = 2;
+  int q = 3;
 
-int main() {
-	swap1(p, q); // pass by reference
-	int *x = &p;
-	int *y = &q;
-	swap2(x, y); // pass by value
-	return 0;
-}
-```
+  int main() {
+    swap1(p, q); // pass by reference
+    int *x = &p;
+    int *y = &q;
+    swap2(x, y); // pass by value
+    return 0;
+  }
+  ```
 
 > Say I want to share a web page with you. If I tell you the URL, I'm passing by reference. You can use that URL to see the same web page I can see. If that page is changed, we both see the changes. If you delete the URL, all you're doing is destroying your reference to that page - you're not deleting the actual page itself.
 
@@ -404,13 +404,13 @@ int main() {
 	```
 	
   - #### with structure pointers
-	```cpp
-	typedef struct Node Node;
-	struct Node {
-			int data;
-			Node *nextptr;
-	};
-	```
+  ```cpp
+  typedef struct Node Node;
+  struct Node {
+      int data;
+      Node *nextptr;
+  };
+  ```
 	 
 	e.g. 2 -->
 	```cpp
@@ -497,29 +497,29 @@ int main() {
 		+ too much inlining can reduce your instruction cache hit rate => low speed of instruction fetch from cache memory to primary memory.
 		+ For many embedded systems, inline functions may not be useful because code size is more imp. than speed.
 	- **Bad** inline programming style
-	```
-	class S
-	{
-	public:
-		inline int square(int s) // redundant use of inline
-		{
-			// this function is automatically inline
-			// function body
-		}
-	};
-	```
+  ```cpp
+  class S
+  {
+  public:
+    inline int square(int s) // redundant use of inline
+    {
+      // this function is automatically inline
+      // function body
+    }
+  };
+  ```
 	- **Good** inline programming style
-	```cpp
-	class S
-	{
-	public:
-		int square(int s); // declare the function
-	};
-	inline int S::square(int s) // use inline prefix
-	{
-			// do something
-	}
-	```
+  ```cpp
+  class S
+  {
+  public:
+    int square(int s); // declare the function
+  };
+  inline int S::square(int s) // use inline prefix
+  {
+      // do something
+  }
+  ```
 	
 	Link - https://www.geeksforgeeks.org/inline-functions-cpp/
 
