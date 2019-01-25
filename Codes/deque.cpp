@@ -4,6 +4,8 @@
 	- back insert
 	- front delete
 	- back delete
+	- read front element
+	- read last element
 */
 
 #include <iostream>
