@@ -71,13 +71,13 @@
 * ### Pointer - 
   here, any pointer has stored values as address
   E.g. 1
-  ```
+  ```cpp
   int a = 5;  // variable stores the value
   int *ptr = nullptr;  // declared and initialised the pointer
   ptr = &a;   // the pointer stores the memory address of the variable.
   ```  
   E.g. 2
-  ```
+  ```cpp
   /*For this program print for each variable
   **print the value of the variable, 
   **then print the address where it is stored. 
@@ -122,13 +122,13 @@
   }
   ```
   
-  Another example of pointer with  ```this```. Click [here](https://beginnersbook.com/2017/08/cpp-this-pointer/).
+  Another example of pointer with  `this`. Click [here](https://beginnersbook.com/2017/08/cpp-this-pointer/).
  
 * ### Pre-increment & Post-increment - 
   Pre- operation & then assign the updated value (to the other var)
   Post - assign the original value (to the other var) & then update this var. 
   E.g. 
-  ```
+  ```cpp
   #include<iostream>
 
   using namespace std;
@@ -154,7 +154,7 @@
   ```
   
 * ### Function by call or by reference
-  ```
+  ```cpp
   #include<iostream>
 
   int increment(int input);
@@ -244,7 +244,7 @@
   [Source](http://www.learncpp.com/cpp-tutorial/131-function-templates/)
   Remember the Stencil analogy. Here, multiple functions with difference of parameter types can be represented with C++ templates.
   E.g. 'max' function
-  ```
+  ```cpp
   // int type
   int max(int x, int y)
   {
@@ -269,7 +269,7 @@
   ```
 	
 * ### C++ Multilevel Inheritance - 
-   ```
+  ```cpp
 	class A
 	{ 
 	... .. ... 
@@ -282,10 +282,10 @@
 	{
 	... ... ...
 	};
-   ```
+  ```
 
 * ### Function by reference vs by value (/pointer) 
-```
+```cpp
 #include <iostream>
 
 // Function by reference
@@ -315,7 +315,6 @@ int main() {
 	swap2(x, y); // pass by value
 	return 0;
 }
-
 ```
 
 > Say I want to share a web page with you. If I tell you the URL, I'm passing by reference. You can use that URL to see the same web page I can see. If that page is changed, we both see the changes. If you delete the URL, all you're doing is destroying your reference to that page - you're not deleting the actual page itself.
@@ -327,8 +326,7 @@ int main() {
 
 * ### `auto` keyword - called as "Type Inferring"
 	it automatically takes the 'type' of the function, variable.
-	
-	
+		
 	```cpp
 	/// This will work
 	auto add(int x, int y)
@@ -420,24 +418,24 @@ int main() {
 	```
 	 &
 	 
-	 ```cpp
-	 typedef struct Node* NodePtr;
-	 NodePtr startptr, endptr, curptr, prevptr, errptr, refptr;
-	 ```
-	 are identical.
-	 
-	- #### with Function pointers
-	 TODO - https://en.wikipedia.org/wiki/Typedef#Using_typedef_with_function_pointers
-	 
+  ```cpp
+  typedef struct Node* NodePtr;
+  NodePtr startptr, endptr, curptr, prevptr, errptr, refptr;
+  ```
+  are identical.
+
+  - #### with Function pointers
+  TODO - https://en.wikipedia.org/wiki/Typedef#Using_typedef_with_function_pointers
+
   - #### with Arrays
-	 ```cpp
-	typedef char arrType[6];    // type name: arrType
-														// new type: char[6]
+  ```cpp
+  typedef char arrType[6];    // type name: arrType
+                          // new type: char[6]
 
-	arrType arr={1,2,3,4,5,6};  // same as: char arr[6]={1,2,3,4,5,6}
+  arrType arr={1,2,3,4,5,6};  // same as: char arr[6]={1,2,3,4,5,6}
 
-	arrType *pArr;              // same as: char (*pArr)[6];
-	 ```
+  arrType *pArr;              // same as: char (*pArr)[6];
+  ```
 	 
   - #### Usage in C++
   ```cpp
@@ -447,7 +445,7 @@ int main() {
      std::pair<std::string, int> const & t = *i;
      // do something
   }
-	 ```
+   ```
    & 
   ```cpp
   typedef std::pair<std::string, int> value_t;
@@ -528,54 +526,54 @@ int main() {
 * ### `const` methods
 	- `const` method function --> not allow them to modify the object on which they are called.
 	- E.g.
-	```
-		#include<iostream>
+  ```cpp
+  #include<iostream>
 
-		using namespace std;
+  using namespace std;
 
-		class Test {
+  class Test {
 
-		    int value;
+      int value;
 
-		public:
-		    Test(int v = 0) {value = v;}
-		    // We get compiler error if we add a line like "value = 100;"
-		    // in this function.
-		    int getValue() const {return value;}  
-		};
+  public:
+      Test(int v = 0) {value = v;}
+      // We get compiler error if we add a line like "value = 100;"
+      // in this function.
+      int getValue() const {return value;}  
+  };
 
-		int main() {
-		    Test t(20);
-		    cout<<t.getValue();
-		    return 0;
-		}
-	```
+  int main() {
+      Test t(20);
+      cout<<t.getValue();
+      return 0;
+  }
+  ```
 	- a `const` function can be called on any type of object.
 	- But, a non-const function can be called by non-const objects.
 
 	Like 
 
-		```
-		#include <iostream>
+  ```cpp
+  #include <iostream>
 
-		using namespace std;
+  using namespace std;
 
-		class Test {
-			int value;
+  class Test {
+    int value;
 
-			public:
-					Test( int v ) {value = v;}
+    public:
+        Test( int v ) {value = v;}
 
-					int getValue() {return value;}
-		};
+        int getValue() {return value;}
+  };
 
-		int main() {
-			const Test t(20);
-			std::cout << t.getValue() << std::endl;
+  int main() {
+    const Test t(20);
+    std::cout << t.getValue() << std::endl;
 
-			return 0;
-		}
-		```
+    return 0;
+  }
+  ```
 
 	gives an error:
 		`passing 'const Test' as 'this' argument of 'int 
@@ -604,70 +602,70 @@ int main() {
 	
   #### E.g. 1
 
-	```cpp
-	#include <iostream>
-	#include <tuple>
+  ```cpp
+  #include <iostream>
+  #include <tuple>
 
-	using namespace std;
+  using namespace std;
 
-	tuple<int, int, char> foo(int n1, int n2) {
-		return make_tuple(n2, n1, 'a');
-	}
+  tuple<int, int, char> foo(int n1, int n2) {
+    return make_tuple(n2, n1, 'a');
+  }
 
-	pair<int, int> foo1(int n1, int n2) /*const*/ {
-		return make_pair(n2, n1);
-	}
+  pair<int, int> foo1(int n1, int n2) /*const*/ {
+    return make_pair(n2, n1);
+  }
 
-	int main() {
-		int a, b;
-		char cc;
+  int main() {
+    int a, b;
+    char cc;
 
-		// Tuple
-		tie(a, b, cc) = foo(1, 2);
-		cout << "values returned by Tuple: \n";
-		cout << a << " " << b  << " " << cc << endl;
+    // Tuple
+    tie(a, b, cc) = foo(1, 2);
+    cout << "values returned by Tuple: \n";
+    cout << a << " " << b  << " " << cc << endl;
 
-		// Pair
-		pair<int, int> p = foo1(3, 4);
-		cout << "values returned by Pair: \n";
-		cout << p.first << " " << p.second;
+    // Pair
+    pair<int, int> p = foo1(3, 4);
+    cout << "values returned by Pair: \n";
+    cout << p.first << " " << p.second;
 
-		return 0;
-	}
-	```
+    return 0;
+  }
+  ```
 	
   #### E.g. 2
 	
-	```cpp
-	#include <iostream>
-	#include <tuple>	// for tuple
-	#include <string>	// for string
+  ```cpp
+  #include <iostream>
+  #include <tuple>	// for tuple
+  #include <string>	// for string
 
-	int main() {
-		int a;
-		float b;
-		char c;  
-		std::string d;
+  int main() {
+  int a;
+  float b;
+  char c;  
+  std::string d;
 
-		// Method - 1 
-		// tie can contain upto any qty.
-		std::tie(a, b, c, d) = std::make_tuple(1, 2.56f, 'c', "abhijit" );
-		std::cout << a << " " 
-					<< b << " " 
-					<< c << " " 
-					<< d 
-					<< std::endl;
+  // Method - 1 
+  // tie can contain upto any qty.
+  std::tie(a, b, c, d) = std::make_tuple(1, 2.56f, 'c', "abhijit" );
+  std::cout << a << " " 
+        << b << " " 
+        << c << " " 
+        << d 
+        << std::endl;
 
-		// Method - 2 
-		std::tuple<int, float, char, std::string> t = std::make_tuple(1, 2.56f, 'c', "abhijit" );		
-		std::cout << std::get<0>(t) << " "
-					<< std::get<1>(t) << " "
-					<< std::get<2>(t) << " "
-					<< std::get<3>(t) << " "
-					<< std::endl;
-		return 0;
-	}
-	```
+  // Method - 2 
+  std::tuple<int, float, char, std::string> t = std::make_tuple(1, 2.56f, 'c', "abhijit" );		
+  std::cout << std::get<0>(t) << " "
+        << std::get<1>(t) << " "
+        << std::get<2>(t) << " "
+        << std::get<3>(t) << " "
+        << std::endl;
+  return 0;
+  }
+  ```
 
 * ### `static` keyword
 	- use in functions
