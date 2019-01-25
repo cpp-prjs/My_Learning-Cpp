@@ -602,7 +602,8 @@ int main() {
 	- Pair: 2 values
 	- Code example:
 	
-	#### E.g. 1
+  #### E.g. 1
+
 	```cpp
 	#include <iostream>
 	#include <tuple>
@@ -633,8 +634,10 @@ int main() {
 
 		return 0;
 	}
+	```
 	
-	#### E.g. 2
+  #### E.g. 2
+	
 	```cpp
 	#include <iostream>
 	#include <tuple>	// for tuple
@@ -666,48 +669,45 @@ int main() {
 	}
 	```
 
-
-```
-
 * ### `static` keyword
 	- use in functions
-	```cpp
-	// C++ program to demonstrate  
-	// the use of static Static  
-	// variables in a Function 
-	#include <iostream> 
-	#include <string> 
-	using namespace std; 
+  ```cpp
+  // C++ program to demonstrate  
+  // the use of static Static  
+  // variables in a Function 
+  #include <iostream> 
+  #include <string> 
+  using namespace std; 
 
-	void demo() 
-	{  
-			// static variable 
-			static int count = 0; 
-			cout << count << " "; 
+  void demo() 
+  {  
+      // static variable 
+      static int count = 0; 
+      cout << count << " "; 
 
-			// value is updated and 
-			// will be carried to next 
-			// function calls 
-			count++; 
-	} 
+      // value is updated and 
+      // will be carried to next 
+      // function calls 
+      count++; 
+  } 
 
-	int main() 
-	{ 
-			for (int i=0; i<5; i++)     
-					demo(); 
-			return 0; 
-	} 
-	```
+  int main() 
+  { 
+      for (int i=0; i<5; i++)     
+          demo(); 
+      return 0; 
+  } 
+  ```
 	
-	Output:
+**Output:**
 	`0 1 2 3 4 `
 	
-	Here, due to `static` keyword use, the variable in the previous function call gets saved (or carried) in the next call and likewise. 
+  Here, due to `static` keyword use, the variable in the previous function call gets saved (or carried) in the next call and likewise. 
 	
-	[SOURCE](https://www.geeksforgeeks.org/static-keyword-cpp/)
+  [SOURCE](https://www.geeksforgeeks.org/static-keyword-cpp/)
 
 * ### `char*` vs `string` vs `char[]`
-	#### `char*`
+#### `char*`
 	```cpp
 	// CPP program to illustrate assigning 
 	// *char value to other variable  
@@ -737,7 +737,7 @@ int main() {
 	Segmentation Fault
 	```
 	
-	#### `std::string` - append, substr, insert, find, replace
+  #### `std::string` - append, substr, insert, find, replace
 	```cpp
 	// CPP program to illustrate  
 	// std::string functions 
@@ -795,7 +795,7 @@ int main() {
 	}
 	```
 	
-	#### `char[]`
+  #### `char[]`
 	```cpp
 	// CPP program to illustrate char 
 	#include <iostream> 
@@ -815,9 +815,9 @@ int main() {
 			return 0; 
 	} 
 	```
-	[SOURCE](https://www.geeksforgeeks.org/char-vs-stdstring-vs-char-c/)
+  [SOURCE](https://www.geeksforgeeks.org/char-vs-stdstring-vs-char-c/)
 	
-	Hence, in C++, prefer `std::string` for string usage as it contains many other functions
+  Hence, in C++, prefer `std::string` for string usage as it contains many other functions
 	
 * ### const
 	- const in variables
@@ -828,3 +828,37 @@ int main() {
 	- const class member function
 	
 	[Source](https://www.studytonight.com/cpp/const-keyword.php)
+
+* ### deque 
+	**Code**:
+  ```cpp
+  // Operations: Front insert, Back insert, front delete, back delete, read front element, read back element
+  #include <iostream>
+  #include <deque>
+
+  int main() {
+    std::deque<int> d;
+    d.push_back(4);		// {4}
+    d.push_back(5);		// {4, 5}
+    d.push_back(45);	// {4, 5, 45}
+    d.push_back(32);	// {4, 5, 45, 32}
+    d.push_back(15);	// {4, 5, 45, 32, 15}
+    std::cout << "The list is: \n" << "\n";
+    for (std::deque<int>::iterator i = d.begin(); i != d.end(); ++i)
+    {
+      std::cout << *i << "\n";
+    }
+    d.pop_back();		// {4, 5, 45, 32}
+    d.pop_front();		// {5, 45, 32}
+    std::cout << "Now, The list is: \n" << "\n";
+    for (std::deque<int>::iterator i = d.begin(); i != d.end(); ++i)
+    {
+      std::cout << *i << "\n";
+    }
+
+    std::cout << "The front element is: " << d.front() << "\n";
+    std::cout << "The last element is: " << d.back() << "\n";
+
+    return 0;
+  }
+  ```
