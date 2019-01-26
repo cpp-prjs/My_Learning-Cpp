@@ -56,6 +56,7 @@ Learn C++ programming from past experienced programmers Java, Python, C.
        
 ## Blogs
 * Herb Sutter - https://herbsutter.com/
+* Jonathan Boccara's blog - Jonathan Boccara's blog
 
 ## Talks
 
