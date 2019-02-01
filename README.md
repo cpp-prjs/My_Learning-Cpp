@@ -48,6 +48,7 @@ Learn C++ programming from past experienced programmers Java, Python, C.
 * Boost Application Development Cookbook - [Book](http://apolukhin.github.io/Boost-Cookbook/), [Github](https://github.com/apolukhin/Boost-Cookbook)
 * Awesome C++ - https://github.com/fffaraz/awesome-cpp
 * Boost python Examples- https://github.com/TNG/boost-python-examples
+* C++ video text recognition - https://github.com/bpieszko/CopyTextFromVideo
 
 ## Books
 * Design and Evolution of C++ by B. Stroustroup - https://github.com/bjut-hz/E-Books/blob/master/program%20language/The%20Design%20And%20Evolution%20Of%20Cpp.pdf
