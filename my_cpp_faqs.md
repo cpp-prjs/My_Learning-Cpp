@@ -20,6 +20,7 @@
   0x61fec8: 3
   0x61fecc: 805331454
   ```
+
 * #### Difference b/w Pointer & Array
   - `sizeof`
     + array - returns the amount of memory used by all elements in array.
@@ -46,3 +47,8 @@
   p++;  /* legal */
   a++;  /* illegal */
   ```
+
+* #### Which one is faster - `std::endl` or `'\n'`?
+  - `'\n'` as `std::endl` includes `\n` + `std::flush` <br/>
+  - 6 times faster.
+  [Reference 1](https://www.youtube.com/watch?v=6WeEMlmrfOI), [Reference 2](https://www.youtube.com/watch?v=GMqQOEZYVJQ)
