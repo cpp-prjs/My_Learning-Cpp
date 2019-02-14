@@ -58,10 +58,10 @@ Learn C++ programming from past experienced programmers Java, Python, C.
        
 ## Blogs
 * Herb Sutter - https://herbsutter.com/
-* Jonathan Boccara's blog - Jonathan Boccara's blog
+* Jonathan Boccara's blog - https://www.fluentcpp.com/
 
 ## Talks
-
+* [CppCon 2017: Dietmar Kühl “The End of std::endl”](https://www.youtube.com/watch?v=6WeEMlmrfOI)
 
 ## FAQs
 * By ISOCPP - https://isocpp.org/wiki/faq
