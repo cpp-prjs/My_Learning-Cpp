@@ -20,3 +20,29 @@
   0x61fec8: 3
   0x61fecc: 805331454
   ```
+* #### Difference b/w Pointer & Array
+  - `sizeof`
+    + array - returns the amount of memory used by all elements in array.
+    + pointer - only returns the amount of memory used by the pointer variable itself.
+  - `& operator`
+    + array - an alias for &array[0] and returns the address of the first element in array.
+    + pointer - returns the address of pointer
+  - `string initialization of character`
+    + array - `char array[] = "abc"` sets the first four elements in arrayy to 'a', 'b', 'c', and '\0'
+    + pointer - `char* pointer = "abc"` sets pointer to the address of the "abc" string (which may be stored in read-only memory and thus unchangeable).
+  - `Assign`
+    + array - cannot be assigned a value.
+    + pointer - can be assigned a value.
+  ```cpp
+  int a[10];
+  int *p;
+  p = a;  /* legal */
+  a = p;  /* illegal */
+  ```
+  - `Arithmetic`
+    + array - NOT allowed.
+    + pointer - allowed.
+  ```cpp
+  p++;  /* legal */
+  a++;  /* illegal */
+  ```
