@@ -48,6 +48,7 @@
   a++;  /* illegal */
   ```
 
+## Input, Output stream
 * #### Which one is faster - `std::endl` or `'\n'`?
   - `'\n'` as `std::endl` includes `\n` + `std::flush` <br/>
   - 6 times faster.
