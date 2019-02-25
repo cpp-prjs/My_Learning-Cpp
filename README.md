@@ -51,6 +51,8 @@ Learn C++ programming from past experienced programmers Java, Python, C.
 * Boost python Examples- https://github.com/TNG/boost-python-examples
 * C++ video text recognition - https://github.com/bpieszko/CopyTextFromVideo
 * Speed Logger - https://github.com/gabime/spdlog
+* cppbestpractices - https://github.com/lefticus/cppbestpractices
+* The fastest JSON parser (2.2 GB/sec) - https://github.com/lemire/simdjson
 
 ## Books
 * Design and Evolution of C++ by B. Stroustroup - https://github.com/bjut-hz/E-Books/blob/master/program%20language/The%20Design%20And%20Evolution%20Of%20Cpp.pdf
