@@ -54,6 +54,8 @@ Learn C++ programming from past experienced programmers Java, Python, C.
 * cppbestpractices - https://github.com/lefticus/cppbestpractices
 * The fastest JSON parser (2.2 GB/sec) - https://github.com/lemire/simdjson
 * Algorithms in C++ - https://github.com/vsmolyakov/cpp
+* Cpp Patterns - https://github.com/wj-zhu/cpp-patterns
+* Cpp header files - https://github.com/wj-zhu/leet-code
 
 ## Books
 * Design and Evolution of C++ by B. Stroustroup - https://github.com/bjut-hz/E-Books/blob/master/program%20language/The%20Design%20And%20Evolution%20Of%20Cpp.pdf
