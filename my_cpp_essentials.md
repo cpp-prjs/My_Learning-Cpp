@@ -863,3 +863,10 @@
 * #### atoi vs stoi
   in string conversion to integer<br/>
   [Code](https://github.com/abhi3700/cpp-playground/blob/master/basics/atoi_vs_stoi.cpp)
+* #### lambda
+```
+[ capture clause ] (parameters) -> return-type  
+{   
+	 definition of method   
+}
+```
