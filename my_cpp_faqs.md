@@ -1,3 +1,8 @@
+## Bits, Bytes
+* #### Why `bool` type is stored in bytes rather than bit?
+	Variables of type `bool` can have only two possible values: `true` and `false`.
+	In theory, a `bool` type requires only one bit (not byte) of storage, but in practice compilers often store them as bytes because a byte can be quickly accessed, while an individual bit must be extracted from a byte, which requires additional time.
+  
 ## Pointers
 * #### Does *p++ increment p, or what it points to?
   The postfix ++ and -- operators essentially have higher precedence than the prefix unary operators. Therefore, *p++ is equivalent to *(p++); it increments p, and returns the value which p pointed to before p was incremented. To increment the value pointed to by p, use (*p)++ (or perhaps ++*p, if the evaluation order of the side effect doesn't matter).
