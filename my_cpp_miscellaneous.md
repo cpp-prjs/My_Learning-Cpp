@@ -186,3 +186,12 @@ Prefix form (++x,--x) follows the rule change-then-use.**
   [View Code](https://github.com/abhi3700/My_Learning-Cpp/blob/master/my_cpp_essentials.md#deque)
   [Read the Analysis](https://baptiste-wicht.com/posts/2012/12/cpp-benchmark-vector-list-deque.html)
   
+* `const` vs `#define`
+	```cpp
+	const float PI = 3.14159F;		// const Qualifier
+	#define PI 3.14159 						// #define Directive
+	```
+
+	However, you can't specify the data type of the constant using `#define`, which can lead to program bugs; so even in C 
+	`#define` has been superseded by `const` used with normal values.
+	Normally, `#define` is used in C, but now a days even that has been changed to `const`.
