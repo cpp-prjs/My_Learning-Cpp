@@ -56,6 +56,7 @@ Learn C++ programming from past experienced programmers Java, Python, C.
 * Algorithms in C++ - https://github.com/vsmolyakov/cpp
 * Cpp Patterns - https://github.com/wj-zhu/cpp-patterns
 * Cpp header files - https://github.com/wj-zhu/leet-code
+* A C library for creating Excel XLSX files - https://github.com/jmcnamara/libxlsxwriter
 
 ## Books
 * Design and Evolution of C++ by B. Stroustroup - https://github.com/bjut-hz/E-Books/blob/master/program%20language/The%20Design%20And%20Evolution%20Of%20Cpp.pdf
